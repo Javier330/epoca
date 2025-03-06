@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué haría yo en otra vida?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Qué haría yo en otra vida?</h1>
+        <form id="lifeForm">
+            <label for="epoca">¿En qué época te gustaría vivir?</label>
+            <select id="epoca">
+                <option value="futuro">Futuro</option>
+                <option value="medieval">Edad Media</option>
+                <option value="actualidad">Actualidad</option>
+                <option value="antigua">Antigüedad</option>
+            </select>
+            
+            <label for="habilidad">¿Qué habilidad te gustaría tener?</label>
+            <input type="text" id="habilidad" required>
+            
+            <label for="trabajo">¿Cuál sería tu trabajo soñado?</label>
+            <input type="text" id="trabajo" required>
+            
+            <label for="lugar">¿Dónde vivirías?</label>
+            <input type="text" id="lugar" required>
+            
+            <button type="submit">Descubrir</button>
+        </form>
+        
+        <div id="resultado" class="hidden">
+            <h2>Tu vida en otra realidad</h2>
+            <p id="descripcion"></p>
+            <button onclick="compartir()">Compartir en redes</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
